@@ -41,6 +41,22 @@ Trois précisions sur le contenu :
 
 ---
 
+## 2026-07-29 — Restitution Mini Manifest (durée non renseignée)
+
+**Parcouru** : OpenLLM France, Lucie (lancement janvier 2025), Luciole (juin 2026), architecture Mamba/State Space Models, ecosystème LLM souverain européen
+
+**Retenu** :
+
+- OpenLLM France pose **l'écologie comme critère de conception**, pas marketing ajouté après coup — analyse de cycle de vie AFNOR pour l'IA frugale, consortium de 300+ orgs, financement BPI France France 2030
+- Lucie (janvier 2025) : lancement chahuté pour 5 raisons concrètes (erreurs basiques, pas d'alignement RLHF, infrastructure sous-dimensionnée, communication décalée, timing mauvais)
+- Luciole (juin 2026) : répond explicitement à chacun des reproches, trois tailles (1B edge, 8B contexte long, 23B raisonnement), poids/scripts/corpus publiés séparément sous trois licences
+- **Essai RAG personnel** : déploiement Ollama/Luciole-8B sur 32 Go RAM — limitation mesurée : prefill lent (134 ms/token vs 32 ms/token Mistral), explication technique : architecture Mamba gain linéaire à l'inférence mais coût au prefill (parallel scan mal implémenté ou absent dans llama.cpp CPU)
+- Conclusion pour QualiCheck : **pas d'adoption** (essai démo Mini Manifest, pas décision architecture) — Luciole pertinent pour RAG en production *si* problème latence prefill résolu ; actuellement pipeline existing suffit
+
+**À creuser** : vérifier support parallel scan dans llama.cpp, comparaison latence Mistral vs Luciole en conditions réelles GPU (pas CPU), écosystème Mamba hors Luciole
+
+**Thème** : couvert (souveraineté + frugalité + écologie = trois piliers développement durable x IA)
+
 ## 2026-07-15 — durée non renseignée
 
 **Parcouru** : métiers du web à l'ère de l'IA — support

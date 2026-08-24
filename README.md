@@ -87,7 +87,10 @@ fichiers au moment du déplacement).
 | `fonds/dev_durable_2026-06-13/` | `presentation.odp` + `script.md` (format à deux rôles déjà appliqué : support live / document de partage), `Kit-dengagement-IA-frugale-1.pdf`, sous-dossier `veille_ia_environnement/` (variante antérieure), `videos/` (non suivi par git, ~180 Mo) | écologie, développement durable — pièce la plus directement dans l'axe du thème assigné |
 | `fonds/freshrss_docker_2026-05-13/` | mise en place de l'instance FreshRSS (Docker + Caddy) — cf. `journal.md` | outillage |
 | `fonds/cybersecurite_ia_2026-05-13/` | rapport cybersécurité x IA — cf. `journal.md` | cybersécurité (antérieur à Mini Manifest) |
-| `fonds/metiers_web_ia_2026-07-15/` | métiers du web à l'ère de l'IA, MD de lecture pas encore généré — cf. `journal.md` | à clarifier (cf. écart de thème noté dans `journal.md`) |
+| `fonds/metiers_web_ia_2026-07-15/` | métiers du web à l'ère de l'IA, `script.md` (MD de lecture généré depuis les diapos), `veille-metiers-web-ia-202.odp` | sociétal, économie (couvert par le thème large) |
+| `fonds/luciole_llm_francais_2026-07-29/` | OpenLLM France, Lucie vs Luciole, essai RAG avec Ollama/Luciole-8B, limitation latence prefill, architecture Mamba vs Transformer — `pourquoi-je-ne-veux-pas-de-luciole.md` (doc principal), `.odp` (support live), `.pdf`, 8 `fiches_recherche/`, `sources.md` (17 sources justifiées) | souveraineté, frugalité, écologie |
+| `fonds/browsing_agents_ia_2026-08-02/` | browsing agents IA | technique (veille en cours, `working/` uniquement) |
+| `fonds/IAMedical/` | IA en médecine | technique (veille en cours, `working/` uniquement) |
 
 `LLM-Engineers-Handbook` n'est **pas** de la veille — laissé dans
 `formation_dev_ia_agentique/veille/`, hors de ce dépôt.
