@@ -41,6 +41,39 @@ Trois précisions sur le contenu :
 
 ---
 
+## 2026-08-26 — Restitution Mini Manifest : IA, médecine et évolution des paradigmes
+
+**Parcouru** : Dario Amodei (*Machines of Loving Grace*), préprint et publication
+*Science* sur o1-preview (raisonnement clinique), rapport Anthropic sur
+Claude/Mythos (conception de protéines), étude ASU/Cell Press Blue sur la
+prédiction de réponse vaccinale — remontée depuis 4 articles Les Numériques.
+
+**Retenu** :
+
+- La médecine comme terrain d'observation d'un fil rouge plus large : jusqu'où
+  va le paradigme LLM actuel, et quelle place reste-t-il aux autres formes
+  d'IA — plutôt qu'une succession, une coexistence de familles (modèle seul,
+  système agentique, IA spécialisée non-LLM)
+- Chiffres extraits directement du préprint o1-preview (copié-collé manuel,
+  extraction automatique du PDF ayant échoué) : sur le raisonnement
+  probabiliste, o1-preview bat les 553 cliniciens humains eux-mêmes (erreur
+  moyenne 5,7 vs 56,3 sur l'ischémie cardiaque) — mais irrégulier sur d'autres
+  tâches (échec net sur 1 exemple sur 3 en génération de plans d'examens)
+- Apport pratique retenu pour QualiCheck : le choix du paradigme (LLM vs
+  modèle spécialisé) devient une décision à justifier, pas un réflexe — un
+  modèle spécialisé sur un problème bien défini consomme moins qu'un LLM
+  généraliste, ce qui referme la boucle sur l'axe développement durable x IA
+
+**À creuser** : le support de présentation (ODP) reste à finaliser à partir du
+plan écrit ; la fresque visuelle timeline (4 miniatures) évoquée en amont n'a
+pas été construite, faute de temps.
+
+**Format** : document de partage en Markdown, structure sémantique (titres
+`##`/`###`, alt-text sur les 5 images), exporté en PDF via un nouveau style
+Pandoc dédié à la veille (`docs/jury/veille/veille.tex`, vert nature `#2E6B3E`,
+distinct des styles conception/formation en bleu) — voir
+`fonds/IAMedical/working/ia-medecine-evolution-paradigmes.md`.
+
 ## 2026-07-29 — Restitution Mini Manifest (durée non renseignée)
 
 **Parcouru** : OpenLLM France, Lucie (lancement janvier 2025), Luciole (juin 2026), architecture Mamba/State Space Models, ecosystème LLM souverain européen
