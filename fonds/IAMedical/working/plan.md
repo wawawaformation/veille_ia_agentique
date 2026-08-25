@@ -41,25 +41,28 @@ présente dans `working/`), `X.1` = slide 4 idées.
 
 ---
 
-## Slide sommaire — Fresque des 4 cas
+## Slide — Une prédiction, trois cas
 
-**Contenu** : une fresque/frise avec les 4 cas à venir, posée comme sommaire
-visuel de la présentation — pas de nouvelle idée, juste la carte du chemin
-qu'on va parcourir.
+**Contenu** : une fresque/frise avec la prédiction et les trois cas à venir —
+pas un sommaire classique, chaque carte porte déjà sa Nature, son Idée clé
+et sa Question : c'est une carte du parcours, pas juste une liste de titres.
+
+**Image** : `illustrations_slide/slide_une_prediction_trois_cas.png`
 
 | # | Cas | Nature |
 | --- | --- | --- |
-| 1 | Dario Amodei | prédiction |
+| 1 | Dario Amodei | prédiction, point de départ |
 | 2 | o1-preview | modèle seul |
 | 3 | Claude / Mythos | système agentique |
 | 4 | Vaccination | IA spécialisée non-LLM |
 
 **Script oral** :
 
-> Quatre cas vont nous guider, dans cet ordre : une prédiction de Dario
-> Amodei, ce qu'un modèle de raisonnement seul sait déjà faire avec
-> o1-preview, ce qu'un système agentique fait de plus avec Claude et Mythos,
-> et pour finir un contre-pied — une IA spécialisée qui n'a rien d'un LLM.
+> Une prédiction et trois cas vont nous guider, dans cet ordre : la
+> prédiction de Dario Amodei comme point de départ, ce qu'un modèle de
+> raisonnement seul sait déjà faire avec o1-preview, ce qu'un système
+> agentique fait de plus avec Claude et Mythos, et pour finir un contre-pied
+> — une IA spécialisée qui n'a rien d'un LLM.
 
 **Durée estimée** : 15 s
 
@@ -127,7 +130,8 @@ qu'on va parcourir.
 
 ## Slide 3.0 — Claude / Mythos : le cas (image)
 
-**Image** : `mythos.webp`
+**Image** : `illustrations_slide/mythos.png` (convertie depuis le `.webp`
+d'origine, incompatible XeLaTeX/PDF)
 
 **Script oral** :
 
@@ -229,7 +233,7 @@ qu'on va parcourir.
 | --- | --- |
 | Couverture — Titre | 10 s |
 | 0 — Rappel | 20 s |
-| Sommaire — Fresque des 4 cas | 15 s |
+| Une prédiction, trois cas | 15 s |
 | 1 — Amodei | 60 s |
 | 2.0 — o1 image | 25 s |
 | 2.1 — o1 idées | 45 s |
