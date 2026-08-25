@@ -90,7 +90,7 @@ fichiers au moment du déplacement).
 | `fonds/metiers_web_ia_2026-07-15/` | métiers du web à l'ère de l'IA, `script.md` (MD de lecture généré depuis les diapos), `veille-metiers-web-ia-202.odp` | sociétal, économie (couvert par le thème large) |
 | `fonds/luciole_llm_francais_2026-07-29/` | OpenLLM France, Lucie vs Luciole, essai RAG avec Ollama/Luciole-8B, limitation latence prefill, architecture Mamba vs Transformer — `pourquoi-je-ne-veux-pas-de-luciole.md` (doc principal), `.odp` (support live), `.pdf`, 8 `fiches_recherche/`, `sources.md` (17 sources justifiées) | souveraineté, frugalité, écologie |
 | `fonds/browsing_agents_ia_2026-08-02/` | browsing agents IA | technique (veille en cours, `working/` uniquement) |
-| `fonds/IAMedical/` | IA, médecine et évolution des paradigmes — Amodei (prospective), o1-preview (modèle seul), Claude/Mythos (système agentique), prédiction vaccinale (IA spécialisée) ; document de partage (`ia-medecine-evolution-paradigmes.md`), 4 fiches d'extraction sourcées, plan ODP (`plan.md`) — restitution prévue 2026-08-26, pas encore basculé en `final/` | technique, développement durable x IA (coût du réflexe "agentique par défaut") |
+| `fonds/IAMedical_2026-08-26/` | IA, médecine et évolution des paradigmes — Amodei (prospective), o1-preview (modèle seul), Claude/Mythos (système agentique), prédiction vaccinale (IA spécialisée) ; document de partage (`ia-medecine-evolution-paradigmes.md`), 4 fiches d'extraction sourcées, plan ODP (`plan.md`) — restitution prévue 2026-08-26, pas encore basculé en `final/` | technique, développement durable x IA (coût du réflexe "agentique par défaut") |
 
 `LLM-Engineers-Handbook` n'est **pas** de la veille — laissé dans
 `formation_dev_ia_agentique/veille/`, hors de ce dépôt.
