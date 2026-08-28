@@ -57,7 +57,7 @@ du 2026-07-23, qui remplace le renvoi externe précédent vers
 un seul exemplaire existe désormais).
 
 ```text
-docs/jury/veille/fonds/
+fonds/
 ```
 
 **Convention de dossier** (2026-07-23) : chaque veille est un dossier
@@ -155,8 +155,8 @@ Cette discipline (styles sémantiques systématiques sur les documents partagés
 n'est pas adoptée pour ce dossier : elle vient d'une pratique professionnelle
 antérieure — David est **expert Opquast qualité web**, l'accessibilité relève donc
 de son cœur de métier, pas d'une conformité découverte à l'occasion de la
-certification. L'aide-mémoire `docs/jury/accessibilite-formats.md` documente les
-règles pour qui les découvre ; il ne remplace pas cette pratique déjà en place.
+certification. L'aide-mémoire `accessibilite-formats.md` documente les règles
+pour qui les découvre ; il ne remplace pas cette pratique déjà en place.
 
 L'enjeu dépasse la seule C6 : l'exigence de documentation accessible revient sur C8,
 C11, C18, C19 et C20. Et elle se remarquerait d'autant plus sur un projet dont

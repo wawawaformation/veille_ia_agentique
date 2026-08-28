@@ -70,7 +70,7 @@ pas été construite, faute de temps.
 
 **Format** : document de partage en Markdown, structure sémantique (titres
 `##`/`###`, alt-text sur les 5 images), exporté en PDF via un nouveau style
-Pandoc dédié à la veille (`docs/jury/veille/veille.tex`, vert nature `#2E6B3E`,
+Pandoc dédié à la veille (`veille.tex`, vert nature `#2E6B3E`,
 distinct des styles conception/formation en bleu) — voir
 `fonds/IAMedical_2026-08-26/working/ia-medecine-evolution-paradigmes.md`.
 
