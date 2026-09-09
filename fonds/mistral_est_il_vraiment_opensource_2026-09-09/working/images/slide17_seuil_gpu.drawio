@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Slide17_SeuilGPU" id="slide17diagram">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="280" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Jauge horizontale 0% -> 100% -->
+        <mxCell id="jauge" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#666666;gradientColor=#D5E8D4;gradientDirection=east;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="680" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Graduations 0% et 100% -->
+        <mxCell id="label_0" value="0%" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="165" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="label_100" value="100%" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="700" y="165" width="60" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ligne du seuil a 85% -->
+        <mxCell id="ligne_seuil" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="638" y="90" as="sourcePoint" />
+            <mxPoint x="638" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_seuil" value="85 %" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="588" y="60" width="100" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Textes bascule -->
+        <mxCell id="txt_cloud" value="CLOUD préférable&#10;(batching, PUE optimisé)" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="190" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="txt_local" value="LOCAL compétitif" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="190" width="140" height="50" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

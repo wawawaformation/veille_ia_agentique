@@ -41,6 +41,50 @@ Trois précisions sur le contenu :
 
 ---
 
+## 2026-09-09 — Restitution Mini Manifest : Mistral est-il vraiment open source ?
+
+**Parcouru** : vidéo YouTube d'Anaïs (point de départ, distinction
+poids/code d'entraînement/données), Free Software Definition et Open
+Source AI Definition (OSI), texte de l'AI Act (règlement 2024/1689,
+articles 2(12), 51, 53, 54), documentation Ollama et Infomaniak (appel
+direct à l'API de liste des modèles) — sources vérifiées par récupération
+réelle, listées dans `fonds/mistral_est_il_vraiment_opensource_2026-09-09/working/bibliographie.md`.
+
+**Retenu** :
+
+- Le vocabulaire « open source » recouvre en réalité trois définitions
+  distinctes (marketing, AI Act, OSAID) qui ne se recouvrent pas — l'AI
+  Act est en fait plus léger que l'OSAID sur les données d'entraînement
+  (un résumé suffit, pas la publication complète)
+- Llama, Mistral, DeepSeek sont *open weight*, pas *open source* au sens
+  strict : les poids sont publiés, mais pas les données ni le code
+  d'entraînement complet — ce qui bloque les libertés 1 à 3 du logiciel
+  libre
+- L'exemption AI Act pour les modèles open source est partielle (deux
+  obligations sur quatre seulement) et saute si le modèle est monétisé ou
+  dépasse le seuil de risque systémique (10²⁵ FLOPs)
+- Twist retenu pour la restitution : un modèle ouvert (Ollama) n'implique
+  pas une indépendance réelle si l'infrastructure d'exécution est hébergée
+  hors UE (RGPD) — l'alternative souveraine (Infomaniak, Suisse) a un
+  catalogue plus restreint. L'indépendance technique n'est pas
+  l'indépendance réelle.
+
+**À creuser** : capture d'écran de l'interface Ollama toujours manquante
+(`images/photos/slide19_ollama_screenshot.png`) — l'ODP affiche un
+placeholder en attendant ; voix haute du bloc 3 (réglementaire/frugalité,
+le plus dense) pas encore répétée.
+
+**Format** : trois livrables distincts pour trois usages — `final/*.odp`
+(support de présentation live), `final/script_oral.pdf` (aide-mémoire
+personnel pour l'oral, gros caractères, une slide par page, minutage
+complet), `final/mistral_est_il_vraiment_opensource.pdf` (document de
+partage pour lecture asynchrone par les autres apprenants, prose complète
+et sourcée) — voir
+`fonds/mistral_est_il_vraiment_opensource_2026-09-09/CLAUDE.md` pour le
+détail de chaque fichier.
+
+---
+
 ## 2026-08-26 — Restitution Mini Manifest : IA, médecine et évolution des paradigmes
 
 **Parcouru** : Dario Amodei (*Machines of Loving Grace*), préprint et publication

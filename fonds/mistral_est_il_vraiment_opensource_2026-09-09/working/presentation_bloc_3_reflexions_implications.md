@@ -22,11 +22,22 @@ Exemption valide **sauf si** le modèle dépasse 10²⁵ FLOPs (environ 10 milli
 
 ### Les trois définitions qui ne se recouvrent pas
 
-| Contexte | « Open source » signifie | Exemple |
+| Contexte | « Open source » signifie | Exigence sur les données |
 |---|---|---|
-| **Marketing commercial** | Poids publiés, un peu transparent | Mistral (open weight) |
-| **AI Act (légal)** | Respecte les 4 libertés FSF | OLMo, Nemotron |
-| **OSAID (OSI)** | Poids + données + code, reproductible | OLMo, Amber, Luciole |
+| **Marketing commercial** | Poids publiés, un peu transparent | Rien |
+| **AI Act (légal)** | Licence libre + paramètres/architecture publics + **non monétisé** | Un **résumé** du contenu d'entraînement (art. 53(1)(d)) |
+| **OSAID (OSI)** | Utiliser / étudier / modifier / redistribuer | Infos **suffisantes pour reconstruire** |
+
+> **Attention (vérifié le 2026-09-08)** : la définition AI Act est plus **légère**
+> que l'OSAID, mais pas vide. Le régime allégé dispense de la doc technique
+> (art. 53(1)(a-b)) et du représentant UE (art. 54), mais **pas** de la politique
+> copyright (53(1)(c)) ni du résumé des données d'entraînement (53(1)(d)).
+>
+> Deux conditions souvent oubliées : **non-monétisation** (considérant 103) et
+> exemption inopérante au-delà du seuil FLOPs. Ne pas affirmer à l'oral que
+> « Mistral/Llama sont open source au sens AI Act » — Mistral monétise, la licence
+> Llama a des restrictions d'usage : la qualification est un débat juridique, pas
+> une évidence.
 
 → **Aucune ne recouvre exactement les autres.**
 

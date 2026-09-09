@@ -189,7 +189,11 @@
 \pagestyle{fancy}
 
 \fancyhf{}
-\fancyhead[L]{\color{maincolor}Veille — Mini Manifest}
+% \veilletitre : titre affiché en en-tête gauche. Valeur par défaut
+% générique ; chaque veille peut la surcharger via un second
+% --include-in-header (voir CLAUDE.md racine, piège "page de garde").
+\providecommand{\veilletitre}{Veille — Mini Manifest}
+\fancyhead[L]{\color{maincolor}\veilletitre}
 \fancyfoot[L]{\color{maincolor}David LEGRAND}
 \fancyfoot[C]{\color{maincolor}\thepage}
 \fancyfoot[R]{\color{maincolor}\today}

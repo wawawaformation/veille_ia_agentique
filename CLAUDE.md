@@ -56,8 +56,69 @@ convention `X_reel.drawio` du skill `~/.claude/skills/schemas-drawio/SKILL.md`.
   (styles de titre, pas de mise en forme manuelle) — c'est lui qui porte la
   charge d'accessibilité, pas l'ODP.
 
+## Outil partagé : génération d'ODP (`outils/odp_builder.py`)
+
+Module Python partagé par toutes les veilles pour générer le support ODP
+(construction via `python-pptx`, conversion réelle en `.odp` via `soffice
+--headless --convert-to odp`, jamais un renommage). Chaque veille garde son
+propre script de contenu dans `fonds/<veille>/working/build_odp.py` — ce
+script code en dur le texte/images/notes de ses slides et importe les
+fonctions génériques (`add_slide`, `add_title`, `add_bullets`,
+`add_image_fit`, `add_table`, `add_notes`, `add_timing_footer`,
+`save_and_convert_to_odp`) depuis `outils/odp_builder.py`.
+
+Voir la docstring en tête de `outils/odp_builder.py` pour l'usage complet et
+les dépendances (venv recommandé : `python3 -m venv /tmp/venv_odp &&
+pip install python-pptx Pillow` — ne pas installer au niveau système, cette
+machine a un Python externally-managed).
+
+Format des notes de présentateur imposé par `add_notes()`, à respecter dans
+tout nouveau script de veille :
+
+```text
+Durée : Xs
+Timing de fin de la slide : X:XX
+---
+• Idée principale 1
+• Idée principale 2
+---
+Mots-clés : mot1, mot2, mot3
+```
+
+Première veille à l'avoir utilisé : `mistral_est_il_vraiment_opensource`
+(2026-09-08) — voir son `working/build_odp.py` comme exemple concret
+(22 slides, images, tableaux, twist final).
+
 ## Pièges déjà rencontrés — à ne pas répéter
 
+- **Ne pas oublier `veille.tex` lors de l'export Markdown → PDF.** Un
+  style LaTeX partagé existe à la racine du dépôt (`veille.tex` : couleurs
+  sobres, en-tête = titre de la veille (macro `\veilletitre`, voir
+  ci-dessous), pied de page nom/page/date, titres colorés, tableaux
+  `booktabs`) — c'est un header-includes, pas un template complet :
+  l'utiliser avec `pandoc ... --pdf-engine=xelatex
+  --include-in-header=/projets/veille/veille.tex`, jamais en improvisant
+  des options de mise en forme ad hoc (marges, police, couleurs) par
+  veille. Sa police par défaut (Latin Modern) ne supporte pas les exposants
+  Unicode (`²⁵` etc.) — écrire `$10^{25}$` en LaTeX inline dans le
+  Markdown source si besoin, pas le caractère Unicode brut.
+- **L'en-tête gauche affiche le titre de la veille, pas « Mini Manifest ».**
+  `veille.tex` définit une macro `\veilletitre` (valeur par défaut « Veille
+  — Mini Manifest », via `\providecommand`) affichée en en-tête. Chaque
+  veille doit la surcharger avec son propre titre dans un petit fichier
+  séparé (ex. `final/titre_entete.tex` contenant juste
+  `\renewcommand{\veilletitre}{Titre de la veille}`), inclus en second
+  avec un deuxième `--include-in-header`, après `veille.tex`. Ne pas
+  modifier le texte par défaut dans `veille.tex` lui-même pour une veille
+  particulière — ça casserait l'en-tête des autres.
+- **Une image de page de garde ne se place pas en tête du `.md`.** Avec
+  `--toc`, Pandoc insère automatiquement la table des matières en tête du
+  corps du document — une image mise en première ligne du Markdown source
+  se retrouve donc APRÈS le sommaire, pas avant. Pour une vraie page de
+  garde, l'injecter séparément avec `--include-before-body=page_de_garde.tex`
+  (un fragment LaTeX minimal : `\includegraphics` + `\caption` + `\newpage`),
+  jamais en comptant sur l'ordre naturel du fichier source. Exemple concret :
+  `fonds/mistral_est_il_vraiment_opensource_2026-09-09/final/page_de_garde.tex`.
 - **Ne pas dupliquer le fonds ailleurs.** Un renvoi externe
   (`formation_dev_ia_agentique/veille/`) a existé puis a été abandonné le
   2026-07-23 au profit d'une centralisation complète dans `fonds/` — un seul

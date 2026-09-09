@@ -19,11 +19,20 @@
 - [OSI Open Source Definition](https://opensource.org/osd/)
 - [Free Software Definition — Free Software Foundation](https://www.gnu.org/philosophy/free-sw.html)
 
+## Infomaniak — alternative souveraine
+
+- [Infomaniak Trust Center — conformité RGPD & sécurité](https://www.infomaniak.com/en/trust-center)
+- Liste des modèles : appel direct `GET https://api.infomaniak.com/2/ai/{id}/openai/v1/models` (source primaire, vérifiée par David le 2026-09-08 — pas la doc, l'API elle-même) : 8 modèles de génération (Ministral-3-14B, Qwen3.5-122B/397B, Gemma-4-31B, Kimi-K2.6, Nemotron-3-Nano-30B, Mistral-Small-4-119B, Apertus-v1.5-70B) + 3 modèles d'embedding
+- [Infomaniak Developer Portal — doc de l'endpoint](https://developer.infomaniak.com/docs/api/get/1/ai/models)
+- Suisse : décision d'adéquation de la Commission européenne (LPD révisée reconnue équivalente RGPD depuis septembre 2023) — pas de clauses contractuelles supplémentaires nécessaires pour transfert UE↔Suisse
+
 ## AI Act et réglementation
 
 - [AI Act — European Commission](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 - [AI Act Article 2(12) — exemption open source](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
 - [AI Act Article 51(2) — seuil risque systémique (10²⁵ FLOPs)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
+- [What Open-Source Developers Need to Know about the EU AI Act's Rules for GPAI Models — Hugging Face](https://huggingface.co/blog/yjernite/eu-act-os-guideai) — **source clé, vérifiée le 2026-09-08** : détaille précisément ce dont l'open source est exempté (art. 53(1)(a-b) documentation technique, art. 54 représentant UE) et ce qui reste obligatoire (art. 53(1)(c) politique copyright, art. 53(1)(d) résumé du contenu d'entraînement), plus les 3 conditions d'éligibilité (licence libre, paramètres/architecture publics, **non-monétisation**). Corrige une erreur initiale de cette veille qui affirmait « aucune exigence sur les données » côté AI Act.
+- [Article 2: Scope — EU Artificial Intelligence Act (texte annoté)](https://artificialintelligenceact.eu/article/2/)
 - [Llama-3 405B specifications and FLOP count — Meta](https://www.llama.com/docs/llama-3-1/)
 
 ## Logiciel libre et standards ouverts

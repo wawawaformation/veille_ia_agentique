@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Slide8_GateauComposantes" id="slide8diagram">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Meme code couleur que slide 7 : poids=vert, recette=bleu, donnees=orange -->
+        <mxCell id="poids" value="POIDS&#10;=&#10;Le gâteau fini" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="recette" value="RECETTE&#10;=&#10;Le processus (température, durée, ordre)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="donnees" value="DONNÉES&#10;=&#10;Les ingrédients (farine, œufs, qualité)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="380" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

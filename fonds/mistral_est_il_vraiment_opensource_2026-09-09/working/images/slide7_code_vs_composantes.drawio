@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Slide7_CodeVsComposantes" id="slide7diagram">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Titre gauche -->
+        <mxCell id="t1" value="Logiciel classique" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Titre droite -->
+        <mxCell id="t2" value="Modèle d'IA" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Boite gauche : code source unique -->
+        <mxCell id="code" value="CODE SOURCE&#10;(fichier .py)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="200" height="260" as="geometry" />
+        </mxCell>
+
+        <!-- 3 boites droite : poids / recette / donnees -->
+        <mxCell id="poids" value="POIDS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="recette" value="RECETTE D'ENTRAÎNEMENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="190" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="donnees" value="DONNÉES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="240" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Textes de synthese sous chaque bloc -->
+        <mxCell id="s1" value="= 1 seule source explique tout" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="= 3 composantes indépendantes" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="380" width="240" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

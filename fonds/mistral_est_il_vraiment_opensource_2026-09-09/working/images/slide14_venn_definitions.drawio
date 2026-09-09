@@ -1,0 +1,27 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Slide14_VennDefinitions" id="slide14diagram">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 3 cercles partiellement chevauches, opacite pour voir les zones communes -->
+        <mxCell id="cercle_marketing" value="Marketing" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;opacity=55;fontSize=15;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="60" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cercle_aiact" value="AI Act (légal)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;opacity=55;fontSize=15;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cercle_osaid" value="OSAID (OSI)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;opacity=55;fontSize=15;fontStyle=1;verticalAlign=bottom;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="280" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- Legende sous le Venn : exemples -->
+        <mxCell id="legende" value="Données d'entraînement — Marketing : rien   |   AI Act : un résumé du contenu   |   OSAID : de quoi reconstruire" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="440" width="580" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
