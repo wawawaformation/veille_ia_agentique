@@ -1,0 +1,74 @@
+{
+  "source": {
+    "file": "page-02.png",
+    "format": "png"
+  },
+  "document": {
+    "title": null,
+    "header": null,
+    "page": null,
+    "page_number_position": null
+  },
+  "ocr": {
+    "provider": "ollama",
+    "model": "glm-5.3-flash",
+    "prompt_tokens": 2058,
+    "completion_tokens": 1235,
+    "total_tokens": 3293,
+    "finish_reason": "stop"
+  },
+  "analysis": {
+    "dehyphenation_applied": true,
+    "uncertain_reading": false,
+    "omission_suspected": false,
+    "reconstruction_detected": true
+  },
+  "quality": {
+    "status": "pending",
+    "controller": null,
+    "fallback_used": false
+  },
+  "content_raw": "## 3 — crème au curaçao\n\n**préparation et cuisson :** 30 minutes\n\n- 1/4 de litre de lait\n- 1 œuf\n- 100 g de sucre\n- 20 g de Maïzena (2 cuillerées à soupe rases)\n- 60 g de beurre\n- 2 cuillerées à soupe de Curaçao\n- 1 sachet de sucre glace Alsa parfum citron\n\n1. Faire bouillir le lait avec la moitié du sucre.\n2. Travailler l'œuf entier avec le reste du sucre et la Maïzena. Délayer avec le lait chaud. Faire bouillir en remuant sans arrêt. Quand la crème épaissit, retirer du feu.\n3. Travailler le beurre en pommade et l'ajouter à la crème tiédie avec le Curaçao. Battre au fouet quelques minutes. Verser dans des coupes individuelles et mettre au frais.\n4. Avant de servir, décorer la crème de fruits de saison (fraises, framboises, groseilles, myrtilles), saupoudrés de sucre glace.\n\n## 4 — crème à l'orange\n\n**préparation et cuisson :** 20 minutes\n\n- 1 citron\n- 2 grosses oranges\n- 150 g de sucre\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 2 sachets de sucre vanillé Alsa\n- 2 jaunes d'œufs\n- 3 tasses d'eau\n- crème fouettée pour garniture\n\n1. Faire chauffer les jus de citron et d'orange avec l'eau et le sucre. Délayer la Maïzena dans un peu d'eau froide et verser dans le liquide bouillant avec le sucre vanillé.\n2. Laisser faire quelques bouillons, puis ajouter hors du feu, les jaunes d'œufs et un peu de zeste d'orange râpé. Verser alors dans un compotier ou dans des coupes individuelles et mettre au frais. Garnir de crème fouettée et de quartiers d'orange.",
+  "content_clean": "## 3 — crème au curaçao\n\n**préparation et cuisson :** 30 minutes\n\n- 1/4 de litre de lait\n- 1 œuf\n- 100 g de sucre\n- 20 g de Maïzena (2 cuillerées à soupe rases)\n- 60 g de beurre\n- 2 cuillerées à soupe de Curaçao\n- 1 sachet de sucre glace Alsa parfum citron\n\n1. Faire bouillir le lait avec la moitié du sucre.\n2. Travailler l'œuf entier avec le reste du sucre et la Maïzena. Délayer avec le lait chaud. Faire bouillir en remuant sans arrêt. Quand la crème épaissit, retirer du feu.\n3. Travailler le beurre en pommade et l'ajouter à la crème tiédie avec le Curaçao. Battre au fouet quelques minutes. Verser dans des coupes individuelles et mettre au frais.\n4. Avant de servir, décorer la crème de fruits de saison (fraises, framboises, groseilles, myrtilles), saupoudrés de sucre glace.\n\n## 4 — crème à l'orange\n\n**préparation et cuisson :** 20 minutes\n\n- 1 citron\n- 2 grosses oranges\n- 150 g de sucre\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 2 sachets de sucre vanillé Alsa\n- 2 jaunes d'œufs\n- 3 tasses d'eau\n- crème fouettée pour garniture\n\n1. Faire chauffer les jus de citron et d'orange avec l'eau et le sucre. Délayer la Maïzena dans un peu d'eau froide et verser dans le liquide bouillant avec le sucre vanillé.\n2. Laisser faire quelques bouillons, puis ajouter hors du feu, les jaunes d'œufs et un peu de zeste d'orange râpé. Verser alors dans un compotier ou dans des coupes individuelles et mettre au frais. Garnir de crème fouettée et de quartiers d'orange.",
+  "reasoning_raw": "The user wants me to transcribe this scanned page in clean Markdown. Let me analyze the page:\n\n- It's a recipe book page with two recipes: \"3 crème au curaçao\" and \"4 crème à l'orange\"\n- No visible page number or running header\n- The main text includes recipe titles, preparation info, ingredients, and numbered instructions\n\nLet me transcribe:\n\n**Recipe 3: crème au curaçao**\n\npréparation et cuisson:\n30 minutes\n1/4 de litre de lait\n1 œuf\n100 g de sucre\n20 g de Maïzena\n(2 cuillerées à soupe rases)\n60 g de beurre\n2 cuillerées à soupe\nde Curaçao\n1 sachet de\nsucre glace Alsa\nparfum citron\n\n1. Faire bouillir le lait avec la moitié du sucre.\n2. Travailler l'œuf entier avec le reste du sucre et la Maïzena. Délayer avec le lait chaud. Faire bouillir en remuant sans arrêt. Quand la crème épaissit, retirer du feu.\n3. Travailler le beurre en pommade et l'ajouter à la crème tiédie avec le Curaçao. Battre au fouet quelques minutes. Verser dans des coupes individuelles et mettre au frais.\n4. Avant de servir, décorer la crème de fruits de saison (fraises, framboises, groseilles, myrtilles), saupoudrés de sucre glace.\n\n**Recipe 4: crème à l'orange**\n\npréparation et cuisson:\n20 minutes\n1 citron\n2 grosses oranges\n150 g de sucre\n40 g de Maïzena\n(4 cuillerées à soupe rases)\n2 sachets\nde sucre vanillé Alsa\n2 jaunes d'œufs\n3 tasses d'eau\ncrème fouettée\npour garniture\n\n1. Faire chauffer les jus de citron et d'orange avec l'eau et le sucre. Délayer la Maïzena dans un peu d'eau froide et verser dans le liquide bouillant avec le sucre vanillé.\n2. Laisser faire quelques bouillons, puis ajouter hors du feu, les jaunes d'œufs et un peu de zeste d'orange râpé. Verser alors dans un compotier ou dans des coupes individuelles et mettre au frais. Garnir de crème fouettée et de quartiers d'orange.\n\nLine breaks / hyphenations to fix:\n- \"quel-ques minutes\" → \"quelques minutes\"\n- \"individuel-les\" → \"individuelles\"\n\nI need to format this in Markdown. The titles are \"3 crème au curaçao\" and \"4 crème à l'orange\" - these are section headings with big numbers. I should keep the numbers as they're part of the recipe numbering.\n\nFormat:\n\n## 3 · crème au curaçao\n\n**préparation et cuisson :** 30 minutes\n\nIngredients list...\n\nInstructions...\n\n## 4 · crème à l'orange\n\netc.\n\nThe ingredients appear right-aligned in two columns layout. I'll present them as a list.\n\nLet me write it cleanly.",
+  "response": {
+    "id": "chatcmpl-754",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "## 3 — crème au curaçao\n\n**préparation et cuisson :** 30 minutes\n\n- 1/4 de litre de lait\n- 1 œuf\n- 100 g de sucre\n- 20 g de Maïzena (2 cuillerées à soupe rases)\n- 60 g de beurre\n- 2 cuillerées à soupe de Curaçao\n- 1 sachet de sucre glace Alsa parfum citron\n\n1. Faire bouillir le lait avec la moitié du sucre.\n2. Travailler l'œuf entier avec le reste du sucre et la Maïzena. Délayer avec le lait chaud. Faire bouillir en remuant sans arrêt. Quand la crème épaissit, retirer du feu.\n3. Travailler le beurre en pommade et l'ajouter à la crème tiédie avec le Curaçao. Battre au fouet quelques minutes. Verser dans des coupes individuelles et mettre au frais.\n4. Avant de servir, décorer la crème de fruits de saison (fraises, framboises, groseilles, myrtilles), saupoudrés de sucre glace.\n\n## 4 — crème à l'orange\n\n**préparation et cuisson :** 20 minutes\n\n- 1 citron\n- 2 grosses oranges\n- 150 g de sucre\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 2 sachets de sucre vanillé Alsa\n- 2 jaunes d'œufs\n- 3 tasses d'eau\n- crème fouettée pour garniture\n\n1. Faire chauffer les jus de citron et d'orange avec l'eau et le sucre. Délayer la Maïzena dans un peu d'eau froide et verser dans le liquide bouillant avec le sucre vanillé.\n2. Laisser faire quelques bouillons, puis ajouter hors du feu, les jaunes d'œufs et un peu de zeste d'orange râpé. Verser alors dans un compotier ou dans des coupes individuelles et mettre au frais. Garnir de crème fouettée et de quartiers d'orange.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "The user wants me to transcribe this scanned page in clean Markdown. Let me analyze the page:\n\n- It's a recipe book page with two recipes: \"3 crème au curaçao\" and \"4 crème à l'orange\"\n- No visible page number or running header\n- The main text includes recipe titles, preparation info, ingredients, and numbered instructions\n\nLet me transcribe:\n\n**Recipe 3: crème au curaçao**\n\npréparation et cuisson:\n30 minutes\n1/4 de litre de lait\n1 œuf\n100 g de sucre\n20 g de Maïzena\n(2 cuillerées à soupe rases)\n60 g de beurre\n2 cuillerées à soupe\nde Curaçao\n1 sachet de\nsucre glace Alsa\nparfum citron\n\n1. Faire bouillir le lait avec la moitié du sucre.\n2. Travailler l'œuf entier avec le reste du sucre et la Maïzena. Délayer avec le lait chaud. Faire bouillir en remuant sans arrêt. Quand la crème épaissit, retirer du feu.\n3. Travailler le beurre en pommade et l'ajouter à la crème tiédie avec le Curaçao. Battre au fouet quelques minutes. Verser dans des coupes individuelles et mettre au frais.\n4. Avant de servir, décorer la crème de fruits de saison (fraises, framboises, groseilles, myrtilles), saupoudrés de sucre glace.\n\n**Recipe 4: crème à l'orange**\n\npréparation et cuisson:\n20 minutes\n1 citron\n2 grosses oranges\n150 g de sucre\n40 g de Maïzena\n(4 cuillerées à soupe rases)\n2 sachets\nde sucre vanillé Alsa\n2 jaunes d'œufs\n3 tasses d'eau\ncrème fouettée\npour garniture\n\n1. Faire chauffer les jus de citron et d'orange avec l'eau et le sucre. Délayer la Maïzena dans un peu d'eau froide et verser dans le liquide bouillant avec le sucre vanillé.\n2. Laisser faire quelques bouillons, puis ajouter hors du feu, les jaunes d'œufs et un peu de zeste d'orange râpé. Verser alors dans un compotier ou dans des coupes individuelles et mettre au frais. Garnir de crème fouettée et de quartiers d'orange.\n\nLine breaks / hyphenations to fix:\n- \"quel-ques minutes\" → \"quelques minutes\"\n- \"individuel-les\" → \"individuelles\"\n\nI need to format this in Markdown. The titles are \"3 crème au curaçao\" and \"4 crème à l'orange\" - these are section headings with big numbers. I should keep the numbers as they're part of the recipe numbering.\n\nFormat:\n\n## 3 · crème au curaçao\n\n**préparation et cuisson :** 30 minutes\n\nIngredients list...\n\nInstructions...\n\n## 4 · crème à l'orange\n\netc.\n\nThe ingredients appear right-aligned in two columns layout. I'll present them as a list.\n\nLet me write it cleanly."
+        }
+      }
+    ],
+    "created": 1789283877,
+    "model": "glm-5.3-flash",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": "fp_ollama",
+    "usage": {
+      "completion_tokens": 1235,
+      "prompt_tokens": 2058,
+      "total_tokens": 3293,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    }
+  }
+}

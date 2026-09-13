@@ -1,0 +1,74 @@
+{
+  "source": {
+    "file": "page-05.png",
+    "format": "png"
+  },
+  "document": {
+    "title": null,
+    "header": null,
+    "page": null,
+    "page_number_position": null
+  },
+  "ocr": {
+    "provider": "ollama",
+    "model": "glm-5.3-flash",
+    "prompt_tokens": 2058,
+    "completion_tokens": 1090,
+    "total_tokens": 3148,
+    "finish_reason": "stop"
+  },
+  "analysis": {
+    "dehyphenation_applied": false,
+    "uncertain_reading": false,
+    "omission_suspected": false,
+    "reconstruction_detected": false
+  },
+  "quality": {
+    "status": "pending",
+    "controller": null,
+    "fallback_used": false
+  },
+  "content_raw": "# 7 · crème au chocolat\n\n**préparation et cuisson :** 15 minutes\n\n125 g de chocolat\n50 g de Maïzena (5 cuillerées à soupe rases)\n1 œuf entier + 1 jaune\n1/2 litre de lait\n50 g de sucre cristallisé\n1 sachet de sucre vanillé Alsa\n40 g de beurre fin\n1 verre à liqueur de rhum\n\n1. Casser le chocolat en petits morceaux. Le faire fondre avec très peu d'eau.\n2. Dans une petite casserole, délayer les sucres et les œufs. Ajouter la Maïzena, puis, peu à peu, le lait. Faire cuire à petit feu en tournant.\n3. Dès ébullition, retirer du feu ; ajouter le rhum puis, la crème étant un peu refroidie, le beurre.\n4. Verser dans des coupes ou dans un compotier et laisser refroidir.\n\n# 8 · mousse hérisson\n\n**préparation et cuisson :** 15 minutes\n\n3 œufs\n2 sachets de sucre vanillé Alsa\n1 tablette de 100 g de chocolat à croquer\n50 g d'amandes effilées\n\n1. Dans une petite casserole à fond épais, casser en morceaux la plaque de chocolat. Ajouter 2 cuillerées d'eau et faire chauffer doucement en remuant.\n2. Dès que le chocolat est fondu, retirer du feu. Ajouter les jaunes d'œufs en remuant très vite, puis 2 sachets de sucre vanillé Alsa.\n3. Ajouter les blancs battus en neige très ferme à la crème. Mélanger doucement les deux préparations. Verser dans de jolis petits ramequins et piquer la surface avec des amandes. Garder au frais 2 ou 3 heures avant de servir.",
+  "content_clean": "# 7 · crème au chocolat\n\n**préparation et cuisson :** 15 minutes\n\n125 g de chocolat\n50 g de Maïzena (5 cuillerées à soupe rases)\n1 œuf entier + 1 jaune\n1/2 litre de lait\n50 g de sucre cristallisé\n1 sachet de sucre vanillé Alsa\n40 g de beurre fin\n1 verre à liqueur de rhum\n\n1. Casser le chocolat en petits morceaux. Le faire fondre avec très peu d'eau.\n2. Dans une petite casserole, délayer les sucres et les œufs. Ajouter la Maïzena, puis, peu à peu, le lait. Faire cuire à petit feu en tournant.\n3. Dès ébullition, retirer du feu ; ajouter le rhum puis, la crème étant un peu refroidie, le beurre.\n4. Verser dans des coupes ou dans un compotier et laisser refroidir.\n\n# 8 · mousse hérisson\n\n**préparation et cuisson :** 15 minutes\n\n3 œufs\n2 sachets de sucre vanillé Alsa\n1 tablette de 100 g de chocolat à croquer\n50 g d'amandes effilées\n\n1. Dans une petite casserole à fond épais, casser en morceaux la plaque de chocolat. Ajouter 2 cuillerées d'eau et faire chauffer doucement en remuant.\n2. Dès que le chocolat est fondu, retirer du feu. Ajouter les jaunes d'œufs en remuant très vite, puis 2 sachets de sucre vanillé Alsa.\n3. Ajouter les blancs battus en neige très ferme à la crème. Mélanger doucement les deux préparations. Verser dans de jolis petits ramequins et piquer la surface avec des amandes. Garder au frais 2 ou 3 heures avant de servir.",
+  "reasoning_raw": "Let me analyze this scanned page. It appears to be a recipe book page with two recipes:\n\n1. Recipe 7: crème au chocolat\n2. Recipe 8: mousse hérisson\n\nThere's no visible page number or running header on this page. The large numbers \"7\" and \"8\" are recipe numbers, not page numbers.\n\nLet me transcribe the content:\n\n**Recipe 7: crème au chocolat**\n\nLeft column (ingredients):\n- préparation et cuisson : 15 minutes\n- 125 g de chocolat\n- 50 g de Maïzena\n- (5 cuillerées à soupe rases)\n- 1 œuf entier + 1 jaune\n- 1/2 litre de lait\n- 50 g de sucre cristallisé\n- 1 sachet de sucre vanillé Alsa\n- 40 g de beurre fin\n- 1 verre à liqueur de rhum\n\nRight column (instructions):\n1. Casser le chocolat en petits morceaux. Le faire fondre avec très peu d'eau.\n2. Dans une petite casserole, délayer les sucres et les œufs. Ajouter la Maïzena, puis, peu à peu, le lait. Faire cuire à petit feu en tournant.\n3. Dès ébullition, retirer du feu; ajouter le rhum puis, la crème étant un peu refroidie, le beurre.\n4. Verser dans des coupes ou dans un compotier et laisser refroidir.\n\n**Recipe 8: mousse hérisson**\n\nLeft column (ingredients):\n- préparation et cuisson : 15 minutes\n- 3 œufs\n- 2 sachets de sucre vanillé Alsa\n- 1 tablette de 100 g de chocolat à croquer\n- 50 g d'amandes effilées\n\nRight column (instructions):\n1. Dans une petite casserole à fond épais, casser en morceaux la plaque de chocolat. Ajouter 2 cuillerées d'eau et faire chauffer doucement en remuant.\n2. Dès que le chocolat est fondu, retirer du feu. Ajouter les jaunes d'œufs en remuant très vite, puis 2 sachets de sucre vanillé Alsa.\n3. Ajouter les blancs battus en neige très ferme à la crème. Mélanger doucement les deux préparations. Verser dans de jolis petits ramequins et piquer la surface avec des amandes. Garder au frais 2 ou 3 heures avant de servir.\n\nCésures: \"Ajou-ter\" → Ajouter, \"sur-face\" → surface.\n\nThe recipe numbers 7 and 8 are part of the recipe titles, so I should keep them. There's no page number visible. The decorative icons (dessert stand, hedgehog) are not text.\n\nFormat in Markdown: I'll use headers for the recipe titles and structure the ingredients and instructions.",
+  "response": {
+    "id": "chatcmpl-172",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "# 7 · crème au chocolat\n\n**préparation et cuisson :** 15 minutes\n\n125 g de chocolat\n50 g de Maïzena (5 cuillerées à soupe rases)\n1 œuf entier + 1 jaune\n1/2 litre de lait\n50 g de sucre cristallisé\n1 sachet de sucre vanillé Alsa\n40 g de beurre fin\n1 verre à liqueur de rhum\n\n1. Casser le chocolat en petits morceaux. Le faire fondre avec très peu d'eau.\n2. Dans une petite casserole, délayer les sucres et les œufs. Ajouter la Maïzena, puis, peu à peu, le lait. Faire cuire à petit feu en tournant.\n3. Dès ébullition, retirer du feu ; ajouter le rhum puis, la crème étant un peu refroidie, le beurre.\n4. Verser dans des coupes ou dans un compotier et laisser refroidir.\n\n# 8 · mousse hérisson\n\n**préparation et cuisson :** 15 minutes\n\n3 œufs\n2 sachets de sucre vanillé Alsa\n1 tablette de 100 g de chocolat à croquer\n50 g d'amandes effilées\n\n1. Dans une petite casserole à fond épais, casser en morceaux la plaque de chocolat. Ajouter 2 cuillerées d'eau et faire chauffer doucement en remuant.\n2. Dès que le chocolat est fondu, retirer du feu. Ajouter les jaunes d'œufs en remuant très vite, puis 2 sachets de sucre vanillé Alsa.\n3. Ajouter les blancs battus en neige très ferme à la crème. Mélanger doucement les deux préparations. Verser dans de jolis petits ramequins et piquer la surface avec des amandes. Garder au frais 2 ou 3 heures avant de servir.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "Let me analyze this scanned page. It appears to be a recipe book page with two recipes:\n\n1. Recipe 7: crème au chocolat\n2. Recipe 8: mousse hérisson\n\nThere's no visible page number or running header on this page. The large numbers \"7\" and \"8\" are recipe numbers, not page numbers.\n\nLet me transcribe the content:\n\n**Recipe 7: crème au chocolat**\n\nLeft column (ingredients):\n- préparation et cuisson : 15 minutes\n- 125 g de chocolat\n- 50 g de Maïzena\n- (5 cuillerées à soupe rases)\n- 1 œuf entier + 1 jaune\n- 1/2 litre de lait\n- 50 g de sucre cristallisé\n- 1 sachet de sucre vanillé Alsa\n- 40 g de beurre fin\n- 1 verre à liqueur de rhum\n\nRight column (instructions):\n1. Casser le chocolat en petits morceaux. Le faire fondre avec très peu d'eau.\n2. Dans une petite casserole, délayer les sucres et les œufs. Ajouter la Maïzena, puis, peu à peu, le lait. Faire cuire à petit feu en tournant.\n3. Dès ébullition, retirer du feu; ajouter le rhum puis, la crème étant un peu refroidie, le beurre.\n4. Verser dans des coupes ou dans un compotier et laisser refroidir.\n\n**Recipe 8: mousse hérisson**\n\nLeft column (ingredients):\n- préparation et cuisson : 15 minutes\n- 3 œufs\n- 2 sachets de sucre vanillé Alsa\n- 1 tablette de 100 g de chocolat à croquer\n- 50 g d'amandes effilées\n\nRight column (instructions):\n1. Dans une petite casserole à fond épais, casser en morceaux la plaque de chocolat. Ajouter 2 cuillerées d'eau et faire chauffer doucement en remuant.\n2. Dès que le chocolat est fondu, retirer du feu. Ajouter les jaunes d'œufs en remuant très vite, puis 2 sachets de sucre vanillé Alsa.\n3. Ajouter les blancs battus en neige très ferme à la crème. Mélanger doucement les deux préparations. Verser dans de jolis petits ramequins et piquer la surface avec des amandes. Garder au frais 2 ou 3 heures avant de servir.\n\nCésures: \"Ajou-ter\" → Ajouter, \"sur-face\" → surface.\n\nThe recipe numbers 7 and 8 are part of the recipe titles, so I should keep them. There's no page number visible. The decorative icons (dessert stand, hedgehog) are not text.\n\nFormat in Markdown: I'll use headers for the recipe titles and structure the ingredients and instructions."
+        }
+      }
+    ],
+    "created": 1789283920,
+    "model": "glm-5.3-flash",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": "fp_ollama",
+    "usage": {
+      "completion_tokens": 1090,
+      "prompt_tokens": 2058,
+      "total_tokens": 3148,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "source": {
+    "file": "page-01.png",
+    "format": "png"
+  },
+  "document": {
+    "title": null,
+    "header": null,
+    "page": null,
+    "page_number_position": "top"
+  },
+  "ocr": {
+    "provider": "ollama",
+    "model": "glm-5.3-flash",
+    "prompt_tokens": 2058,
+    "completion_tokens": 1636,
+    "total_tokens": 3694,
+    "finish_reason": "stop"
+  },
+  "analysis": {
+    "dehyphenation_applied": true,
+    "uncertain_reading": false,
+    "omission_suspected": false,
+    "reconstruction_detected": true
+  },
+  "quality": {
+    "status": "pending",
+    "controller": null,
+    "fallback_used": false
+  },
+  "content_raw": "# 1 · crème fluide à l'anglaise\n\n**préparation et cuisson :** 20 minutes\n\n- 1 litre de lait\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 100 g de sucre en poudre\n- 2 jaunes d'œufs\n- 2 sachets de sucre vanillé Alsa\n\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\n\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\n# 2 · crème marbrée au caramel\n\n**variante**\n\n**préparation et cuisson :** 20 minutes\n\n- Crème fluide à l'anglaise (recette ci-dessus)\n- 2 dosettes de caramel Alsa\n- 2 cuillerées à soupe de crème fraîche\n\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.",
+  "content_clean": "# 1 · crème fluide à l'anglaise\n\n**préparation et cuisson :** 20 minutes\n\n- 1 litre de lait\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 100 g de sucre en poudre\n- 2 jaunes d'œufs\n- 2 sachets de sucre vanillé Alsa\n\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\n\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\n# 2 · crème marbrée au caramel\n\n**variante**\n\n**préparation et cuisson :** 20 minutes\n\n- Crème fluide à l'anglaise (recette ci-dessus)\n- 2 dosettes de caramel Alsa\n- 2 cuillerées à soupe de crème fraîche\n\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.",
+  "reasoning_raw": "Let me analyze this scanned page.\n\nThe page appears to be from a recipe book (Alsa brand, French). There's a large pink border around the page.\n\nHeader: I see icons (a dessert on a stand and what appears to be a pig/chariot icon) at top. There's no visible running header text or page number visible in the image.\n\nContent:\n\nRecipe 1: \"crème fluide à l'anglaise\" with a big pink number \"1\"\n\nLeft column:\n- préparation et cuisson : (with a clock icon)\n- 20 minutes\n- 1 litre de lait\n- 40 g de Maïzena\n- (4 cuillerées à soupe rases)\n- 100 g de sucre en poudre\n- 2 jaunes d'œufs\n- 2 sachets\n- de sucre vanillé Alsa\n\nRight column:\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\nNote the hyphenation: \"Maï-zena\" → Maïzena; \"secon-des\" → secondes; \"ci-dessus\" → ci-dessus.\n\nRecipe 2: \"crème marbrée au caramel\" with big pink number \"2\" and icons.\n\n\"variante\" in pink text.\n\nLeft column:\n- préparation et cuisson : (clock icon)\n- 20 minutes\n- Crème fluide à l'anglaise (recette ci-dessus)\n- 2 dosettes de caramel Alsa\n- 2 cuillerées à soupe\n- de crème fraîche\n\nRight column:\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.\n\nHyphenations: \"ci-dessus\" (ci- / dessus), \"la crème fraîche\" (crème / fraîche).\n\nNo page number visible. No running header text (just decorative icons).\n\nShould I include the ingredients lists? The instruction says transcribe the main visible text. The ingredients are part of the main text. I'll include them in a clean Markdown format.\n\nFormat: I'll use headings for recipe titles, bold for \"préparation et cuisson :\", and lists.\n\nLet me produce:\n\n# 1 crème fluide à l'anglaise\n\n**préparation et cuisson :**\n20 minutes\n1 litre de lait\n40 g de Maïzena\n(4 cuillerées à soupe rases)\n100 g de sucre en poudre\n2 jaunes d'œufs\n2 sachets de sucre vanillé Alsa\n\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\n\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\n# 2 crème marbrée au caramel\n\n**variante**\n\n**préparation et cuisson :**\n20 minutes\nCrème fluide à l'anglaise (recette ci-dessus)\n2 dosettes de caramel Alsa\n2 cuillerées à soupe de crème fraîche\n\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.\n\nNote: \"2 cuillerées à soupe\" and \"de crème fraîche\" are on separate lines but it's \"2 cuillerées à soupe de crème fraîche\". Similarly \"2 sachets\" and \"de sucre vanillé Alsa\" = \"2 sachets de sucre vanillé Alsa\". I'll join them since they're line-wrapped.\n\nThe title: \"crème fluide à l'anglaise\" — the big number 1 is a decorative numeral. I could include it as part of heading: \"1. crème fluide à l'anglaise\" or just the title text. Since the instruction says respect the main text, I'll include the numeral as part of the heading but keep lowercase as shown. Maybe format as \"# 1 — crème fluide à l'anglaise\"? Better to keep simple: \"## 1 crème fluide à l'anglaise\". Hmm. The numeral is decorative, part of the recipe numbering. I'll include it.\n\n\"variante\" is a pink label before the ingredient list of recipe 2. Include it.\n\nFinal answer in Markdown, no comments.",
+  "response": {
+    "id": "chatcmpl-493",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "# 1 · crème fluide à l'anglaise\n\n**préparation et cuisson :** 20 minutes\n\n- 1 litre de lait\n- 40 g de Maïzena (4 cuillerées à soupe rases)\n- 100 g de sucre en poudre\n- 2 jaunes d'œufs\n- 2 sachets de sucre vanillé Alsa\n\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\n\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\n# 2 · crème marbrée au caramel\n\n**variante**\n\n**préparation et cuisson :** 20 minutes\n\n- Crème fluide à l'anglaise (recette ci-dessus)\n- 2 dosettes de caramel Alsa\n- 2 cuillerées à soupe de crème fraîche\n\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "Let me analyze this scanned page.\n\nThe page appears to be from a recipe book (Alsa brand, French). There's a large pink border around the page.\n\nHeader: I see icons (a dessert on a stand and what appears to be a pig/chariot icon) at top. There's no visible running header text or page number visible in the image.\n\nContent:\n\nRecipe 1: \"crème fluide à l'anglaise\" with a big pink number \"1\"\n\nLeft column:\n- préparation et cuisson : (with a clock icon)\n- 20 minutes\n- 1 litre de lait\n- 40 g de Maïzena\n- (4 cuillerées à soupe rases)\n- 100 g de sucre en poudre\n- 2 jaunes d'œufs\n- 2 sachets\n- de sucre vanillé Alsa\n\nRight column:\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\nNote the hyphenation: \"Maï-zena\" → Maïzena; \"secon-des\" → secondes; \"ci-dessus\" → ci-dessus.\n\nRecipe 2: \"crème marbrée au caramel\" with big pink number \"2\" and icons.\n\n\"variante\" in pink text.\n\nLeft column:\n- préparation et cuisson : (clock icon)\n- 20 minutes\n- Crème fluide à l'anglaise (recette ci-dessus)\n- 2 dosettes de caramel Alsa\n- 2 cuillerées à soupe\n- de crème fraîche\n\nRight column:\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.\n\nHyphenations: \"ci-dessus\" (ci- / dessus), \"la crème fraîche\" (crème / fraîche).\n\nNo page number visible. No running header text (just decorative icons).\n\nShould I include the ingredients lists? The instruction says transcribe the main visible text. The ingredients are part of the main text. I'll include them in a clean Markdown format.\n\nFormat: I'll use headings for recipe titles, bold for \"préparation et cuisson :\", and lists.\n\nLet me produce:\n\n# 1 crème fluide à l'anglaise\n\n**préparation et cuisson :**\n20 minutes\n1 litre de lait\n40 g de Maïzena\n(4 cuillerées à soupe rases)\n100 g de sucre en poudre\n2 jaunes d'œufs\n2 sachets de sucre vanillé Alsa\n\n1. Délayer la Maïzena dans une demi-tasse de lait froid. Faire bouillir le reste du lait et verser la Maïzena. Ajouter les sucres et laisser bouillir 2 à 3 secondes en tournant.\n2. Retirer du feu. Ajouter les jaunes d'œufs délayés avec très peu de lait froid, en mélangeant vivement. Verser la crème anglaise dans une coupe et laisser refroidir.\n\nPour gagner du temps, on peut utiliser une préparation pour crème anglaise Alsa.\n\n# 2 crème marbrée au caramel\n\n**variante**\n\n**préparation et cuisson :**\n20 minutes\nCrème fluide à l'anglaise (recette ci-dessus)\n2 dosettes de caramel Alsa\n2 cuillerées à soupe de crème fraîche\n\n1. Préparer une crème anglaise comme indiqué ci-dessus.\n2. Mélanger les 2 dosettes de caramel Alsa et la crème fraîche.\n3. Au moment de servir, verser sur le dessus de la crème à l'anglaise un mince filet de sauce caramel de façon à former des marbrures. Présenter le reste de la sauce à part.\n\nNote: \"2 cuillerées à soupe\" and \"de crème fraîche\" are on separate lines but it's \"2 cuillerées à soupe de crème fraîche\". Similarly \"2 sachets\" and \"de sucre vanillé Alsa\" = \"2 sachets de sucre vanillé Alsa\". I'll join them since they're line-wrapped.\n\nThe title: \"crème fluide à l'anglaise\" — the big number 1 is a decorative numeral. I could include it as part of heading: \"1. crème fluide à l'anglaise\" or just the title text. Since the instruction says respect the main text, I'll include the numeral as part of the heading but keep lowercase as shown. Maybe format as \"# 1 — crème fluide à l'anglaise\"? Better to keep simple: \"## 1 crème fluide à l'anglaise\". Hmm. The numeral is decorative, part of the recipe numbering. I'll include it.\n\n\"variante\" is a pink label before the ingredient list of recipe 2. Include it.\n\nFinal answer in Markdown, no comments."
+        }
+      }
+    ],
+    "created": 1789283864,
+    "model": "glm-5.3-flash",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": "fp_ollama",
+    "usage": {
+      "completion_tokens": 1636,
+      "prompt_tokens": 2058,
+      "total_tokens": 3694,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    }
+  }
+}

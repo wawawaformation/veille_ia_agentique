@@ -1,0 +1,74 @@
+{
+  "source": {
+    "file": "page-06.png",
+    "format": "png"
+  },
+  "document": {
+    "title": null,
+    "header": null,
+    "page": null,
+    "page_number_position": null
+  },
+  "ocr": {
+    "provider": "ollama",
+    "model": "glm-5.3-flash",
+    "prompt_tokens": 2058,
+    "completion_tokens": 905,
+    "total_tokens": 2963,
+    "finish_reason": "stop"
+  },
+  "analysis": {
+    "dehyphenation_applied": false,
+    "uncertain_reading": true,
+    "omission_suspected": false,
+    "reconstruction_detected": false
+  },
+  "quality": {
+    "status": "pending",
+    "controller": null,
+    "fallback_used": false
+  },
+  "content_raw": "# crème colombienne\n\n**préparation et cuisson :** 30 minutes\n\n- 40 g de café en grains\n- 1/2 litre de lait\n- 2 sachets de sucre vanillé Alsa\n- 50 g de chocolat\n- 1 dosette de caramel Alsa\n- 2 jaunes d'œufs\n- 60 g de sucre fin\n- 30 g de Maïzena (3 cuillerées à soupe rases)\n\n1. Faire bouillir le lait et le sucre vanillé. Retirer du feu.\n2. Simultanément, faire chauffer les grains de café dans une petite poêle à fond épais, en remuant sans arrêt. Puis les jeter dans le lait vanillé bouillant et laisser infuser 20 minutes environ.\n3. Faire fondre le chocolat dans très peu d'eau.\n4. Passer le lait. Ajouter la dosette de caramel Alsa, puis le chocolat fondu. Bien fouetter le mélange et le verser sur les jaunes d'œufs et la Maïzena, travaillés avec le sucre.\n5. Laisser cuire à feu doux en remuant sans cesse. Retirer à la première ébullition. Verser la crème dans un compotier ou dans des coupes et la présenter accompagnée de macarons.\n\nAvec les blancs d'œufs non utilisés, les enfants pourront réussir facilement des macarons.",
+  "content_clean": "# crème colombienne\n\n**préparation et cuisson :** 30 minutes\n\n- 40 g de café en grains\n- 1/2 litre de lait\n- 2 sachets de sucre vanillé Alsa\n- 50 g de chocolat\n- 1 dosette de caramel Alsa\n- 2 jaunes d'œufs\n- 60 g de sucre fin\n- 30 g de Maïzena (3 cuillerées à soupe rases)\n\n1. Faire bouillir le lait et le sucre vanillé. Retirer du feu.\n2. Simultanément, faire chauffer les grains de café dans une petite poêle à fond épais, en remuant sans arrêt. Puis les jeter dans le lait vanillé bouillant et laisser infuser 20 minutes environ.\n3. Faire fondre le chocolat dans très peu d'eau.\n4. Passer le lait. Ajouter la dosette de caramel Alsa, puis le chocolat fondu. Bien fouetter le mélange et le verser sur les jaunes d'œufs et la Maïzena, travaillés avec le sucre.\n5. Laisser cuire à feu doux en remuant sans cesse. Retirer à la première ébullition. Verser la crème dans un compotier ou dans des coupes et la présenter accompagnée de macarons.\n\nAvec les blancs d'œufs non utilisés, les enfants pourront réussir facilement des macarons.",
+  "reasoning_raw": "The user wants me to transcribe this scanned page in Markdown. Let me analyze:\n\n- The page shows a large \"9\" (chapter number) with the title \"crème colombienne\"\n- There's a preparation/cooking info block on the left\n- Main text is a recipe with numbered steps\n\nAnalysis:\n- Header: the large \"9\" is a chapter number, title \"crème colombienne\"\n- Page number: none visible\n- Césures: \"tra-\" / \"vaillés\" → \"travaillés\"; \"pour-\" / \"ront\" → \"pourront\"\n- Ambiguous zones: none major\n\nI should transcribe the main text including the title (the title is part of the main content, not a running header). The large \"9\" is a chapter number — it's part of the page design. I think the title should be included since it's the recipe title. The instruction says not to include \"l'en-tête courant\" (running header) — this isn't really a running header, it's the chapter title. I'll include it.\n\nIngredients block:\n- préparation et cuisson : 30 minutes\n- 40 g de café en grains\n- 1/2 litre de lait\n- 2 sachets de sucre vanillé Alsa\n- 50 g de chocolat\n- 1 dosette de caramel Alsa\n- 2 jaunes d'œufs\n- 60 g de sucre fin\n- 30 g de Maïzena (3 cuillerées à soupe rases)\n\nMain text:\n1. Faire bouillir le lait et le sucre vanillé. Retirer du feu.\n2. Simultanément, faire chauffer les grains de café dans une petite poêle à fond épais, en remuant sans arrêt. Puis les jeter dans le lait vanillé bouillant et laisser infuser 20 minutes environ.\n3. Faire fondre le chocolat dans très peu d'eau.\n4. Passer le lait. Ajouter la dosette de caramel Alsa, puis le chocolat fondu. Bien fouetter le mélange et le verser sur les jaunes d'œufs et la Maïzena, travaillés avec le sucre.\n5. Laisser cuire à feu doux en remuant sans cesse. Retirer à la première ébullition. Verser la crème dans un compotier ou dans des coupes et la présenter accompagnée de macarons.\n\nAvec les blancs d'œufs non utilisés, les enfants pourront réussir facilement des macarons.\n\nFormat in Markdown: title as heading, ingredients as list, steps as numbered list.",
+  "response": {
+    "id": "chatcmpl-356",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "# crème colombienne\n\n**préparation et cuisson :** 30 minutes\n\n- 40 g de café en grains\n- 1/2 litre de lait\n- 2 sachets de sucre vanillé Alsa\n- 50 g de chocolat\n- 1 dosette de caramel Alsa\n- 2 jaunes d'œufs\n- 60 g de sucre fin\n- 30 g de Maïzena (3 cuillerées à soupe rases)\n\n1. Faire bouillir le lait et le sucre vanillé. Retirer du feu.\n2. Simultanément, faire chauffer les grains de café dans une petite poêle à fond épais, en remuant sans arrêt. Puis les jeter dans le lait vanillé bouillant et laisser infuser 20 minutes environ.\n3. Faire fondre le chocolat dans très peu d'eau.\n4. Passer le lait. Ajouter la dosette de caramel Alsa, puis le chocolat fondu. Bien fouetter le mélange et le verser sur les jaunes d'œufs et la Maïzena, travaillés avec le sucre.\n5. Laisser cuire à feu doux en remuant sans cesse. Retirer à la première ébullition. Verser la crème dans un compotier ou dans des coupes et la présenter accompagnée de macarons.\n\nAvec les blancs d'œufs non utilisés, les enfants pourront réussir facilement des macarons.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "The user wants me to transcribe this scanned page in Markdown. Let me analyze:\n\n- The page shows a large \"9\" (chapter number) with the title \"crème colombienne\"\n- There's a preparation/cooking info block on the left\n- Main text is a recipe with numbered steps\n\nAnalysis:\n- Header: the large \"9\" is a chapter number, title \"crème colombienne\"\n- Page number: none visible\n- Césures: \"tra-\" / \"vaillés\" → \"travaillés\"; \"pour-\" / \"ront\" → \"pourront\"\n- Ambiguous zones: none major\n\nI should transcribe the main text including the title (the title is part of the main content, not a running header). The large \"9\" is a chapter number — it's part of the page design. I think the title should be included since it's the recipe title. The instruction says not to include \"l'en-tête courant\" (running header) — this isn't really a running header, it's the chapter title. I'll include it.\n\nIngredients block:\n- préparation et cuisson : 30 minutes\n- 40 g de café en grains\n- 1/2 litre de lait\n- 2 sachets de sucre vanillé Alsa\n- 50 g de chocolat\n- 1 dosette de caramel Alsa\n- 2 jaunes d'œufs\n- 60 g de sucre fin\n- 30 g de Maïzena (3 cuillerées à soupe rases)\n\nMain text:\n1. Faire bouillir le lait et le sucre vanillé. Retirer du feu.\n2. Simultanément, faire chauffer les grains de café dans une petite poêle à fond épais, en remuant sans arrêt. Puis les jeter dans le lait vanillé bouillant et laisser infuser 20 minutes environ.\n3. Faire fondre le chocolat dans très peu d'eau.\n4. Passer le lait. Ajouter la dosette de caramel Alsa, puis le chocolat fondu. Bien fouetter le mélange et le verser sur les jaunes d'œufs et la Maïzena, travaillés avec le sucre.\n5. Laisser cuire à feu doux en remuant sans cesse. Retirer à la première ébullition. Verser la crème dans un compotier ou dans des coupes et la présenter accompagnée de macarons.\n\nAvec les blancs d'œufs non utilisés, les enfants pourront réussir facilement des macarons.\n\nFormat in Markdown: title as heading, ingredients as list, steps as numbered list."
+        }
+      }
+    ],
+    "created": 1789283928,
+    "model": "glm-5.3-flash",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": "fp_ollama",
+    "usage": {
+      "completion_tokens": 905,
+      "prompt_tokens": 2058,
+      "total_tokens": 2963,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    }
+  }
+}
