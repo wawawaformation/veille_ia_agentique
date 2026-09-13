@@ -6,15 +6,23 @@ code d'entraînement et données. Angle titre : le vocabulaire « open source »
 est souvent employé à tort (Llama, Mistral, DeepSeek qualifiés d'« open
 source » alors qu'ils ne satisfont pas les critères stricts).
 
-## État actuel (2026-09-09) — veille terminée
+## État actuel (2026-09-13) — veille terminée et nettoyée avant push
 
-Les trois livrables sont finalisés dans `final/` : ODP (support live),
-`script_oral.pdf` (aide-mémoire personnel de présentation) et
-`mistral_est_il_vraiment_opensource.pdf` (document de partage pour
-lecture asynchrone). Présentation orale prévue le 2026-09-10 (10 min
-cible, 9:30 réel calculé — 30s de marge). Dossier renommé
-`mistral_est_il_vraiment_opensource_2026-09-09` le 2026-09-09, conforme à
-la convention `nom_AAAA-MM-JJ` du `CLAUDE.md` racine.
+Présentation orale faite le 2026-09-10 (10 min cible, 9:30 réel calculé —
+30s de marge). Dossier renommé `mistral_est_il_vraiment_opensource_2026-09-09`
+le 2026-09-09, conforme à la convention `nom_AAAA-MM-JJ` du `CLAUDE.md`
+racine.
+
+**`final/` a été consolidé le 2026-09-13** en un seul dossier de diffusion,
+`final/veille_opensource_david_9septembre2026/` : ODP (support live),
+`mistral_est_il_vraiment_opensource.pdf` (document de partage), le
+`bibliographie.md` correspondant et `origine_youtube_anais.url` (source de
+départ). Les livrables intermédiaires propres à la présentation orale
+(`script_oral.pdf`, aide-mémoire personnel non destiné à la diffusion) et
+les fragments de construction (`page_de_garde.tex`, `titre_entete.tex`,
+`images/`, `mistral_est_il_vraiment_opensource_slides.pdf`) ont été
+supprimés de `final/` à cette occasion — récupérables dans l'historique
+git (commit `218dc26`) si une régénération est un jour nécessaire.
 
 Le contenu s'est restructuré en **4 blocs de présentation distincts**
 (`presentation_bloc_1_logiciel_libre.md` à `presentation_bloc_4_ollama.md`)
@@ -53,69 +61,54 @@ document source mais n'est plus la structure de présentation.
   Régénérer avec `python3 build_odp.py` depuis un venv avec
   `python-pptx`/`Pillow` installés — le script écrit directement dans
   `final/`.
-- `final/mistral_est_il_vraiment_opensource.odp` — **le livrable ODP**,
-  généré le 2026-09-08 à partir de `build_odp.py`. Slide 19 affiche un
-  placeholder texte tant que `slide19_ollama_screenshot.png` n'existe pas —
-  régénérer une fois la capture ajoutée.
-- `working/document_de_partage_redige.md` / `final/mistral_est_il_vraiment_opensource.pdf`
-  — **document de partage rédigé**, destiné à une lecture asynchrone par
-  les autres apprenants (prose complète et autonome, hiérarchie de titres
-  continue, analogies en toutes lettres, sources en liens explicites) —
-  écrit le 2026-09-08, déplacé un temps vers `working/` le 2026-09-09 le
-  temps que le script oral (voir ci-dessous) devienne prioritaire, puis
-  **réexporté en PDF le 2026-09-09** une fois le script oral achevé,
-  redevenant un livrable actif à part entière. Contient le schéma manquant
-  signalé par David (diagramme de Venn des 3 définitions d'« open source »,
-  slide 14) et l'angle AI Act enrichi (articles 53/54, non-monétisation).
-  Régénérer avec (depuis `final/`, important pour que les chemins d'image
-  relatifs de `page_de_garde.tex` et du corps du document se résolvent
-  correctement) :
-  `pandoc ../working/document_de_partage_redige.md -o
+- `final/veille_opensource_david_9septembre2026/` — **le dossier de
+  diffusion**, seul contenu de `final/` depuis le nettoyage du 2026-09-13 :
+  - `mistral_est_il_vraiment_opensource.odp` — le livrable ODP, généré le
+    2026-09-08 à partir de `working/build_odp.py`.
+  - `mistral_est_il_vraiment_opensource.pdf` — document de partage rédigé
+    (source : `working/document_de_partage_redige.md`), destiné à une
+    lecture asynchrone par les autres apprenants (prose complète et
+    autonome, hiérarchie de titres continue, analogies en toutes lettres,
+    sources en liens explicites). Contient le diagramme de Venn des 3
+    définitions d'« open source » (slide 14) et l'angle AI Act enrichi
+    (articles 53/54, non-monétisation).
+  - `bibliographie.md` — copie de `working/bibliographie.md`.
+  - `origine_youtube_anais.url` — la vidéo de départ.
+
+  Le script oral (`working/script_oral.md`), aide-mémoire personnel non
+  destiné à la diffusion, et les fragments de construction du PDF
+  (`page_de_garde.tex`, `titre_entete.tex`) ont été retirés de `final/` au
+  nettoyage. Pour mémoire, le PDF de partage était régénéré (depuis
+  l'ancien `final/`, pour que les chemins d'image relatifs de
+  `page_de_garde.tex` se résolvent) avec :
+  `pandoc working/document_de_partage_redige.md -o
   mistral_est_il_vraiment_opensource.pdf --pdf-engine=xelatex
-  --include-in-header=/projets/veille/veille.tex
+  --include-in-header=/projets/veille/outils/veille.tex
   --include-in-header=titre_entete.tex
   --include-before-body=page_de_garde.tex --toc -V lang=fr -V
-  papersize=a4`.
-- `working/script_oral.md` / `final/script_oral.pdf` — **le livrable
-  actuel** : aide-mémoire pour la présentation orale, slide par slide.
+  papersize=a4` — commande et fragments `.tex` récupérables dans
+  l'historique git (commit `218dc26`) si une régénération est un jour
+  nécessaire.
+- `working/script_oral.md` — aide-mémoire pour la présentation orale,
+  slide par slide (n'a plus de PDF associé dans `final/`, cf. ci-dessus).
   Format par section imposé par David le 2026-09-09 : titre exact de la
   slide (celui affiché sur l'ODP, pas un label improvisé), `**Durée**` et
   `**Fin de slide**` sur une ligne, puis le texte parlé — phrases
   complètes façon le document de partage mais condensées et orales, pas
   du télégraphique. Contenu reprend la substance de
   `document_de_partage_redige.md` (y compris l'angle AI Act enrichi :
-  articles 53/54, non-monétisation) plutôt que de réinventer. En gros
-  caractères pour être lu facilement pendant que David parle. Généré en
+  articles 53/54, non-monétisation) plutôt que de réinventer. Généré en
   `documentclass=extarticle`, `fontsize=17pt` (la classe `article`
   standard ne va pas au-delà de 12pt, `extarticle` du paquet `extsizes`
   est nécessaire pour 14/17/20pt), sans table des matières (inutile pour
   un document lu linéairement), **une slide par page** (`\newpage` LaTeX
   brut entre chaque section — cf. `working/correction_script_oral.md` du
   2026-09-09 pour l'historique des corrections de contenu appliquées).
-  Réutilise `veille.tex` + `titre_entete.tex` pour la cohérence visuelle.
-  Même piège que le document de partage : les
-  caractères Unicode spéciaux (`≠`, `²⁵`) ne passent pas dans la police
-  Latin Modern en gras du template — reformuler en toutes lettres (`n'est
-  pas`) ou en LaTeX inline (`$10^{25}$`), jamais le caractère Unicode brut
-  dans un titre de section. Régénérer avec :
-  `pandoc script_oral.md -o ../final/script_oral.pdf --pdf-engine=xelatex
-  --include-in-header=/projets/veille/veille.tex
-  --include-in-header=../final/titre_entete.tex -V lang=fr -V
-  papersize=a4 -V documentclass=extarticle -V fontsize=17pt` (depuis
-  `working/`).
-- `final/page_de_garde.tex` — fragment LaTeX injecté avant la table des
-  matières (utilisé par le document de partage, pas par le script oral) :
-  image de couverture (chat + Pinocchio, cf. slide 1 de l'ODP) + légende en
-  guise de texte alternatif. Nécessaire car `--toc` s'insère automatiquement
-  en tête du corps du document — une image mise en tête du `.md` atterrit
-  donc APRÈS le sommaire, pas avant. Piège à ne pas répéter pour une
-  prochaine veille.
-- `final/titre_entete.tex` — surcharge le titre affiché en en-tête gauche
-  du PDF (macro `\veilletitre`, valeur par défaut « Veille — Mini
-  Manifest » dans `veille.tex` racine) par le vrai titre de cette veille.
-  Un seul `\renewcommand`, à inclure en second, après `veille.tex`. Utilisé
-  par le script oral ET par le document de partage si celui-ci est un jour
-  ré-exporté.
+  Même piège que le document de partage : les caractères Unicode spéciaux
+  (`≠`, `²⁵`) ne passent pas dans la police Latin Modern en gras du
+  template — reformuler en toutes lettres (`n'est pas`) ou en LaTeX
+  inline (`$10^{25}$`), jamais le caractère Unicode brut dans un titre de
+  section.
 - `working/Fiche de veille — IA _ de l'API fermée à l'Open Source.md` —
   document source originel : 4 libertés du logiciel libre (Stallman/FSF), standards
   ouverts, Open Source AI Definition de l'OSI (Use/Study/Modify/Share),
@@ -156,12 +149,5 @@ document source mais n'est plus la structure de présentation.
 
 ## Reste à faire
 
-- **Capture d'écran Ollama** (interface + catalogue + 3 modes) — à faire par
-  David (a l'abonnement Cloud Pro), déposer sous
-  `images/photos/slide19_ollama_screenshot.png`, puis relancer
-  `python3 working/build_odp.py` pour régénérer `final/*.odp`.
-- Voix haute du bloc 3 (le plus dense, mélange réglementaire + physique
-  énergétique) et du twist final (bloc 4, slide 21 — ton « léger, ironique »
-  à caler).
-- Vérifier les URLs restantes de la « Fiche de veille » originelle
-  (échantillon partiel vérifié le 2026-09-07 uniquement).
+— terminé, rien en suspens (présentation faite le 2026-09-10, `final/`
+nettoyé le 2026-09-13).

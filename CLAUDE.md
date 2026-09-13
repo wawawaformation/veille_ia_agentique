@@ -91,13 +91,13 @@ Première veille à l'avoir utilisé : `mistral_est_il_vraiment_opensource`
 
 ## Pièges déjà rencontrés — à ne pas répéter
 
-- **Ne pas oublier `veille.tex` lors de l'export Markdown → PDF.** Un
-  style LaTeX partagé existe à la racine du dépôt (`veille.tex` : couleurs
+- **Ne pas oublier `outils/veille.tex` lors de l'export Markdown → PDF.** Un
+  style LaTeX partagé existe dans `outils/` (`veille.tex` : couleurs
   sobres, en-tête = titre de la veille (macro `\veilletitre`, voir
   ci-dessous), pied de page nom/page/date, titres colorés, tableaux
   `booktabs`) — c'est un header-includes, pas un template complet :
   l'utiliser avec `pandoc ... --pdf-engine=xelatex
-  --include-in-header=/projets/veille/veille.tex`, jamais en improvisant
+  --include-in-header=/projets/veille/outils/veille.tex`, jamais en improvisant
   des options de mise en forme ad hoc (marges, police, couleurs) par
   veille. Sa police par défaut (Latin Modern) ne supporte pas les exposants
   Unicode (`²⁵` etc.) — écrire `$10^{25}$` en LaTeX inline dans le
