@@ -32,8 +32,8 @@ structurellement rien à faire dans le dépôt fil rouge. Voir la section
 - `fonds/` — le matériau lui-même (documents, présentations, PDF, notes)
 - `accessibilite-formats.md` — aide-mémoire PDF/ODP/MD/ODT pour produire un
   format accessible (critère C6, renvoie à Valentin Haüy / AcceDe)
-- `referentiel-c6.md` — extrait du référentiel officiel (compétence, savoir-faire,
-  critères de performance/réussite) tel qu'il figure dans
+- `referentiel-c6-c7-c8.md` — extrait du référentiel officiel (compétences,
+  savoir-faire, critères de performance/réussite) tel qu'il figure dans
   `/projets/formation_dev_ia_agentique/référentiel/`
 
 ## Convention de dossier dans `fonds/`

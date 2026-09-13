@@ -89,7 +89,7 @@ fichiers au moment du déplacement).
 | `fonds/cybersecurite_ia_2026-05-13/` | rapport cybersécurité x IA — cf. `journal.md` | cybersécurité (antérieur à Mini Manifest) |
 | `fonds/metiers_web_ia_2026-07-15/` | métiers du web à l'ère de l'IA, `script.md` (MD de lecture généré depuis les diapos), `veille-metiers-web-ia-202.odp` | sociétal, économie (couvert par le thème large) |
 | `fonds/luciole_llm_francais_2026-07-29/` | OpenLLM France, Lucie vs Luciole, essai RAG avec Ollama/Luciole-8B, limitation latence prefill, architecture Mamba vs Transformer — `pourquoi-je-ne-veux-pas-de-luciole.md` (doc principal), `.odp` (support live), `.pdf`, 8 `fiches_recherche/`, `sources.md` (17 sources justifiées) | souveraineté, frugalité, écologie |
-| `fonds/browsing_agents_ia_2026-08-02/` | browsing agents IA | technique (veille en cours, `working/` uniquement) |
+| `fonds/browsing_agents_ia/` | browsing agents IA | technique (veille en cours, pas de date : contenu non encore constaté, `working/` uniquement) |
 | `fonds/IAMedical_2026-08-26/` | IA, médecine et évolution des paradigmes — Amodei (prospective), o1-preview (modèle seul), Claude/Mythos (système agentique), prédiction vaccinale (IA spécialisée) ; document de partage (`ia-medecine-evolution-paradigmes.md`), 4 fiches d'extraction sourcées, plan ODP (`plan.md`) — restitution prévue 2026-08-26, pas encore basculé en `final/` | technique, développement durable x IA (coût du réflexe "agentique par défaut") |
 
 `LLM-Engineers-Handbook` n'est **pas** de la veille — laissé dans
@@ -101,13 +101,28 @@ le plus souvent.
 
 ## Lien avec le projet
 
-La synthèse `fonds/ia_souverain_2026-05-27/final/synthese.md` et ses trois visuels alimentent
-directement l'argumentation de `conception/annexes/F_choix_llm.md` (choix de modèles
-souverains, Apertus-70B et Mistral Small via Infomaniak en production) ainsi que la
-section « Positionnement éthique et technique » de `conception/conception.md`.
+La veille et la pratique professionnelle (QualiCheck) s'alimentent mutuellement,
+dans les deux sens — ce n'est pas une veille isolée d'un côté et un projet de
+l'autre.
 
-C'est un cas où la veille a produit une décision d'architecture traçable, pas
-seulement de la culture générale.
+**Une veille nourrit une décision QualiCheck :**
+
+| Veille | Ce qu'elle a produit pour QualiCheck |
+| --- | --- |
+| `fonds/ia_souverain_2026-05-27/` | La synthèse et ses trois visuels alimentent directement l'argumentation de `conception/annexes/F_choix_llm.md` (choix de modèles souverains, Apertus-70B et Mistral Small via Infomaniak en production) ainsi que la section « Positionnement éthique et technique » de `conception/conception.md`. |
+| `fonds/luciole_llm_francais_2026-07-29/` | Confirme le choix Infomaniak déjà en production pour le RAG : conclusion explicite « pas d'adoption » de Luciole, argumentée (latence prefill), pas un simple essai sans suite. |
+| `fonds/IAMedical_2026-08-26/` | Tranche la question d'un recours à un système agentique (type Mythos) pour QualiCheck : non, justifié. |
+
+**Un besoin QualiCheck déclenche une veille :**
+
+| Origine QualiCheck | Veille déclenchée |
+| --- | --- |
+| Chantier d'architecture (scission de bases), question annexe sur le modèle d'enrichissement | `fonds/comparatifs_llm_multiprovider_2026-09-08/` |
+| Besoin US2 (analyser une capture d'écran/maquette avant d'interroger les règles Opquast) + un besoin personnel de numérisation de livres anciens | `fonds/benchmark_vision/` |
+
+Ce sont des cas où la veille a produit une décision d'architecture traçable, pas
+seulement de la culture générale — et réciproquement, où la pratique du projet a
+directement fait remonter un sujet de veille plutôt qu'une lecture externe.
 
 ## Ce qui reste à formaliser
 
