@@ -41,6 +41,59 @@ Trois précisions sur le contenu :
 
 ---
 
+## 2026-09-13 — Benchmark vision (OCR/VLM) — durée non renseignée
+
+**Parcouru** : constitution et exécution d'un premier protocole de benchmark
+modèle × provider sur un besoin réel (numérisation de livres anciens +
+QualiCheck US2) — corpus de pages difficiles (cuisine, *Le Capital*, captures
+Web), couples testés : Tesseract (référence OCR classique), Gemma 4 31B sur
+Ollama ET sur Infomaniak, GPT-5.4-mini/Azure, GLM-5.3-Flash/Ollama, Kimi
+K2.6/Infomaniak (10 pages). Approfondissement du `reasoning` exposé par GLM
+sur les trois corpus.
+
+**Retenu** :
+
+- **Un même modèle nominal se comporte différemment selon le provider** :
+  Gemma 4 31B ne produit pas exactement la même sortie chez Ollama et chez
+  Infomaniak — le benchmark ne compare donc pas des modèles mais des
+  « solutions d'inférence réelles » (modèle + provider + configuration +
+  prompt).
+- Pas de vainqueur unique : GPT-5.4-mini pour la vitesse/robustesse, Gemma 4
+  31B pour le compromis économique (sous réserve d'un cas d'omission
+  silencieuse déjà observé — un bloc d'ingrédients disparu), GLM pour la
+  structure et la télémétrie (reasoning séparé), au prix d'une consommation
+  et d'une latence nettement plus élevées.
+- Kimi K2.6/Infomaniak : qualité correcte à bonne, mais consommation très
+  élevée et sortie verbeuse — disproportionné pour un rôle d'OCR principal
+  page par page ; classé candidat non prioritaire plutôt qu'exclu.
+- **Le reasoning n'est pas une preuve de qualité** : GLM peut mal interpréter
+  une page tout en produisant un commentaire assuré ; l'hypothèse d'un lien
+  entre longueur du reasoning et risque d'erreur n'est qu'un indice à ce
+  stade, pas une corrélation démontrée.
+- Sur le corpus Web, GLM décrit et reconstruit la structure d'une interface
+  plutôt que de simplement transcrire des caractères — prometteur pour
+  QualiCheck US2, mais change la nature de l'évaluation (analyse d'interface
+  ≠ transcription documentaire).
+- Réouverture méthodologique en cours de veille (cf. `working/CHANGELOG.md`) :
+  l'hypothèse initiale « GLM comme VLM principal parce qu'il expose un
+  reasoning » n'est plus tenable sans comparaison, puisque Kimi K2.6 et
+  potentiellement Gemma 4 31B exposent aussi un mode `thinking`. Priorité
+  changée vers des tests thinking ON/OFF sur Gemma et Kimi via Ollama.
+
+**À creuser** : créer une vérité terrain sur un sous-ensemble difficile avant
+toute conclusion sur le pouvoir prédictif du reasoning ; tester le
+contrôleur textuel séparé `gpt-oss:20b` ; définir la stratégie de fallback ;
+compléter éventuellement Kimi K2.6 sur Azure et Ollama Cloud (mêmes 10 pages)
+pour isoler l'effet du provider à modèle constant — non indispensable si
+l'objectif est seulement de montrer que Kimi est disproportionné en l'état.
+
+**Thème** : développement durable x IA, volet technique et souveraineté
+(coût réel d'un pipeline en cascade, choix provider selon la nature des
+données) — né d'un besoin opérationnel (numérisation) et d'un besoin
+QualiCheck (US2 vision), pas d'une lecture externe.
+
+---
+
 ## 2026-09-09 — Restitution Mini Manifest : Mistral est-il vraiment open source ?
 
 **Parcouru** : vidéo YouTube d'Anaïs (point de départ, distinction
